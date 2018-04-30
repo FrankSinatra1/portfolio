@@ -1,0 +1,286 @@
+@font-face {
+	font-family: GillSansNovaBook;
+	src: url("../fonts/Gill Sans Nova Book.otf");
+}
+@font-face {
+	font-family: GillSansNovaMedium;
+	src: url("../fonts/Gill Sans Nova Medium.otf");
+}
+@font-face {
+	font-family: GillSansNovaSemiBold;
+	src: url("../fonts/Gill Sans Nova SemiBold.otf");
+}
+@font-face {
+	font-family: PFCentroSlabProBold;
+	src: url("../fonts/PFCentroSlabProBold.ttf");
+}
+@font-face {
+	font-family: PFCentroSlabProMedium;
+	src: url("../fonts/PFCentroSlabProMedium.ttf");
+}
+@font-face {
+	 font-family: "Bebas Neue";
+	 src: url("../fonts/BebasNeue-Regular.otf");
+}
+
+
+/**::selection{
+	color: #fff;
+}*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: #000;
+}
+
+.padWrapper {
+	padding-left: 10%;
+}
+
+/*________________________________________________________________*/
+
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.fp-tableCell {
+	vertical-align: baseline !important;
+}
+
+header {
+	height: 95px;
+	background: #000;
+	justify-content: center;
+	box-shadow: 0 0 33px #ffffff24;
+	z-index: 5;
+	position: fixed;
+	width: 100%;
+}
+
+header .flex-between {
+	width: 90%;
+}
+
+.flex-between {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .leftBlock p{
+	font-family: Bebas Neue;
+	color: #fff;
+}
+
+header .leftBlock {
+	opacity: .85;
+	transition: .3s;
+	cursor: pointer;
+}
+
+header .leftBlock:hover {
+	opacity: 1;
+}
+
+header .leftBlock p:first-child{
+	font-size: 37px;
+}
+
+header .leftBlock p:last-child{
+	font-size: 14px;
+	letter-spacing: .3px;
+}
+
+.rightBlock {
+	justify-content: space-between;
+	width: 100%;
+	max-width: 500px;
+	font-family: PFCentroSlabProMedium;
+}
+
+.rightBlock a {
+	opacity: .8;
+	transition: .3s;
+}
+
+.rightBlock a:hover {
+	opacity: 1;
+}
+
+.socialIcons {
+	width: 100%;
+	max-width: 150px;
+	justify-content: space-between;
+}
+
+.socialIcons a {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	opacity: .80;
+	text-align: center;
+	line-height: 35px;
+	transition: .3s;
+}
+
+.socialIcons a:hover {
+	opacity: 1;
+}
+
+.socialIcons a i {
+	color: #fff;
+	opacity: .85;
+	transition: .3s;
+}
+
+.socialIcons a:hover i{
+	opacity: 1;
+}
+
+section {
+	height: calc(100vh - 95px);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+section.aboutMe {
+	font-family: GillSansNovaBook;
+	font-size: 1.2em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 50%;
+}
+
+section.aboutMe a {
+	text-decoration: underline;
+	transition: .3s;
+	position: relative;
+	display: inline-block;
+}
+
+section.aboutMe a:before {
+	content: "";
+	height: 4px;
+	width: 100%;
+	background: #000;
+	position: absolute;
+}
+
+section.aboutMe a:hover {
+	color: #141414;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+form input {
+	color: #141414;
+	outline: 0;
+	padding: 10px 15px;
+	font-size: 16px;
+	border-radius: 30px;
+	border: none;
+	font-family: GillSansNovaMedium;
+	width: 250px;
+}
+
+form .click {
+	color: #141414;
+	font-size: 16px;
+	border-radius: 30px;
+	font-family: GillSansNovaMedium;
+	width: 120px;
+	height: 30px;
+	background: aqua;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.wrap-slide-item {
+
+}
+
+.slide-img {
+	background: #141414;
+	height: 300px;
+	width: 500px;
+	border-radius: 	15px;
+	justify-content: center;
+	margin-right: 55px;
+}
+
+.slide-text {
+	width: 100%;
+	max-width: 520px;
+	font-family: GillSansNovaBook;
+	letter-spacing: .3px;
+}
+
+.slide-img-element {
+	background-repeat: no-repeat;
+	background-position:  center;
+	width: 100%;
+}
+
+.owl-nav img{
+	height: 20px;
+}
+.owl-nav button {
+	outline: 0;
+}
+.btn-next img {
+	transform: rotate(180deg);
+	margin-left: 15px;
+}
+.btn-prev img {
+	margin-right: 15px;
+}
+.btn-next, .btn-prev {
+	transition: .3s;
+	position: absolute;
+  	align-items: flex-end;
+	opacity: .8;
+}
+.owl-nav {
+	top: 0;
+	width: 100%;
+	font-family: GillSansNovaMedium;
+}
+.btn-next:hover, .btn-prev:hover {
+	opacity: 1;
+}
+.btn-next {
+	left: 50%;
+	bottom: -10px;
+}
+.btn-prev {
+	left:25%;
+	top: -60px;
+}
